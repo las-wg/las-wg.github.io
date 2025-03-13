@@ -10,9 +10,9 @@ export default function Home() {
     <>
       <Head>
         <title>LAS-WG</title>
-        <meta name="description" content="" />
-        <meta property="og:title" content="Title of the project" />
-        <meta property="og:description" content="" />
+        <meta name="description" content="A lean working group that develops standards for AI agents." />
+        <meta property="og:title" content="Lightweight Agent Standard Working Group" />
+        <meta property="og:description" content="A lean working group that develops standards for AI agents." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://las-wg.org" />
         <meta property="og:image" content="" />
