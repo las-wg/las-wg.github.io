@@ -26,7 +26,7 @@ export default function Home() {
 
         <header className="lgtw-max-w-lg:justify-around max-w-lg:px-4 max-w-lg:mr-auto absolute top-0 z-20 flex h-[60px] w-full bg-opacity-0 px-[5%] text-black cover-white">
           <a className="h-[60%] p-[4px]" href="/" style={{marginTop: 'auto', marginBottom: 'auto'}}>
-            <img src="/logo.svg" alt="logo" style={{height: '100%'}} />
+            <img src="/logo.svg" alt="logo" className="hidden lg:block" style={{height: '100%'}} />
           </a>
           <div id="collapsed-header-items" className={`collapsible-header animated-collapse ${headerOpen ? "w-full" : "w-0"}`}>
             <div className="flex h-full w-max gap-5 text-base text-black max-lg:mt-[30px] max-lg:flex-col max-lg:place-items-end max-lg:gap-5 lg:mx-auto lg:place-items-center">
@@ -161,7 +161,6 @@ export default function Home() {
                 { name: "University of Oxford", img: "oxford.png" },
                 { name: "Stanford University", img: "stanford.png" },
                 { name: "Massachussets Institute of Technology", img: "mit.png" },
-                { name: "Centre for the Governance of AI", img: "govai.png" },
                 { name: "Cosmos Institute", img: "cosmos.png" },
                 { name: "Wildcard", img: "wildcard.png" },
               ].map((t, idx) => (
