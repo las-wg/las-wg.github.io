@@ -66,7 +66,7 @@ export default function Home() {
               <a className="btn transition-transform duration-[0.3s] hover:scale-x-[1.03]" href="https://discord.gg/wmRSNHsRAh">
                 Discord
               </a>
-              <a className="btn !bg-[#c8cbf984] !text-primary transition-transform duration-[0.3s] hover:scale-x-[1.03] cover-white" href="">
+              <a className="btn !bg-[#c8cbf984] !text-primary transition-transform duration-[0.3s] hover:scale-x-[1.03] cover-white" href="#about-us">
                 <span>Learn more</span>
               </a>
             </div>
@@ -111,8 +111,8 @@ export default function Home() {
               {/* Repeat feature cards */}
               {[
                 { icon: "bi-boombox-fill", title: "Build Small", content: "We focus on specific parts of agent communication." },
-                { icon: "bi-award-fill", title: "Industry-Driven", content: "We work with the major agent companies & organizations to focus on st"},
-                { icon: "bi-book-fill", title: "Quick & Iterative", content: "We work with " },
+                { icon: "bi-award-fill", title: "Application-Driven", content: "We work with the major agent companies & organizations to focus on the issues that matter."},
+                { icon: "bi-book-fill", title: "Quick & Iterative", content: "We prefer testing something rather than debating if it will work." },
               ].map((feat, idx) => (
                 <div key={idx} className="flex  w-[350px] flex-col gap-2 p-4 text-center max-lg:w-[320px]">
                   <i className={`bi ${feat.icon} text-5xl text-primary`}></i>
@@ -126,8 +126,8 @@ export default function Home() {
           </section>
 
           {/* Testimonials Section */}
-          <section className="mt-5 flex w-full flex-col items-center p-[2%]">
-            <h3 className="text-3xl font-medium text-primary max-md:text-2xl">Members</h3>
+          {/*<section className="mt-5 flex w-full flex-col items-center p-[2%]">
+            <h3 className="text-3xl font-medium text-primary max-md:text-2xl">Member Organizations</h3>
             <div className="mt-8 gap-10 space-y-8 max-md:columns-1 lg:columns-2 xl:columns-3">
               {[ 
                 { name: "Samuele Marro", title: "University of Oxford", img: "/assets/images/people/women.jpg", text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, vero." },
@@ -146,6 +146,28 @@ export default function Home() {
                       <div className="font-semibold">{t.name}</div>
                       <div className="text-[#4b4b4b]">{t.title}</div>
                     </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>*/}
+
+          <section className="mt-5 flex w-full flex-col items-center p-[2%]">
+            <h3 className="text-3xl font-medium text-primary max-md:text-2xl">Member Organizations</h3>
+            <div className="mt-8 gap-10 space-y-8 max-md:columns-1 lg:columns-2 xl:columns-3">
+              {[ 
+                { name: "LangChain", img: "langchain.png" },
+                { name: "Camel AI", img: "camelai.png" },
+                { name: "University of Oxford", img: "oxford.png" },
+                { name: "Stanford University", img: "stanford.png" },
+                { name: "Massachussets Institute of Technology", img: "mit.png" },
+                { name: "Centre for the Governance of AI", img: "govai.png" },
+                { name: "Cosmos Institute", img: "cosmos.png" },
+                { name: "Wildcard", img: "wildcard.png" },
+              ].map((t, idx) => (
+                <div key={idx} className="flex h-fit w-[350px] break-inside-avoid flex-col rounded-lg p-4 shadow-lg max-lg:w-[320px]">
+                  <div className="flex place-items-center gap-3">
+                    <img src={"/orgs/" + t.img} alt={t.name} className="object-cover" />
                   </div>
                 </div>
               ))}
@@ -190,7 +212,7 @@ export default function Home() {
           <section className="flex w-full flex-col items-center gap-[10%] p-[5%] px-[10%]">
             <div className="flex w-full flex-col items-center gap-3">
               <h2 className="text-2xl text-primary max-md:text-xl">Stay updated</h2>
-              <h2 className="text-xl max-md:text-lg">Weekly meetings on Discord.</h2>
+              <h2 className="text-xl max-md:text-lg">Weekly meetings on AI agent standards.</h2>
               <div className="flex h-[60px] items-center gap-2 overflow-hidden p-2">
               <a className="btn transition-transform duration-[0.3s] hover:scale-x-[1.03]" href="https://discord.gg/wmRSNHsRAh">
                 Join our Discord
@@ -215,9 +237,10 @@ export default function Home() {
           {/* Footer Section */}
           <footer className="mt-auto flex w-full place-content-around gap-3 p-[5%] px-[10%] text-black max-md:flex-col">
             <div className="flex h-full w-[250px] flex-col items-center gap-6 max-md:w-full">
-              <Image src="/assets/logo/logo1.png" alt="logo" width={120} height={120} className="max-w-[120px]" />
+              {/*<Image src="/assets/logo/logo1.png" alt="logo" width={120} height={120} className="max-w-[120px]" />*/}
+              <img src="/logo.svg" alt="logo" style={{height: '100%'}} />
               
-              <div className="mt-3 text-lg font-semibold">Follow us</div>
+              {/*<div className="mt-3 text-lg font-semibold">Follow us</div>
               <div className="flex gap-4 text-2xl">
                 <a href="" aria-label="Facebook">
                   <i className="bi bi-facebook"></i>
@@ -228,7 +251,7 @@ export default function Home() {
                 <a href="https://instagram.com/" className="h-[40px] w-[40px]" aria-label="Instagram">
                   <i className="bi bi-instagram"></i>
                 </a>
-              </div>
+              </div>*/}
             </div>
             <div className="flex h-full w-[250px] flex-col gap-4">
               <h2 className="text-3xl max-md:text-xl">Resources</h2>
