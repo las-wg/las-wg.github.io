@@ -98,7 +98,7 @@ export default function Home() {
           </section>*/}
 
           {/* Core Features Section */}
-          <section id="about-us" className="relative flex w-full flex-col items-center p-6 cover-white">
+          <section id="about-us" className="relative flex w-full flex-col items-center p-6 cover-white pb-1">
             <div className="flex max-w-[750px] flex-col gap-5 text-center">
               <h2 className="mt-10 text-4xl font-semibold max-lg:text-3xl">
                 Small, <span className="text-primary">Specific</span> Standards
@@ -152,8 +152,9 @@ export default function Home() {
             </div>
           </section>*/}
 
-          <section className="mt-5 flex w-full flex-col items-center p-[2%]">
-            <h3 className="text-3xl font-medium text-primary max-md:text-2xl">Member Organizations</h3>
+          <section className="mt-5 flex w-full flex-col items-center p-[2%] pb-1">
+            <h3 className="text-4xl font-medium text-primary max-md:text-2xl">Membership</h3>
+            <h2 className="text-xl max-md:text-lg p-2">Members join individually. We have members from several organizations, including:</h2>
             <div className="mt-8 gap-10 space-y-8 max-md:columns-1 lg:columns-2 xl:columns-3">
               {[ 
                 { name: "LangChain", img: "langchain.png" },
