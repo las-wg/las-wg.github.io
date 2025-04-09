@@ -165,7 +165,8 @@ export default function Home() {
                 { name: "Cosmos Institute", img: "cosmos.png" },
                 { name: "Wildcard", img: "wildcard.png" },
                 { name: "Agent Network Protocol", img: "anp.png"},
-                { name: "Eclipse LMOS", img: "eclipse-lmos.png"}
+                { name: "Eclipse LMOS", img: "eclipse-lmos.png"},
+                { name: "AgentOps", img: "agentops.png"},
               ].map((t, idx) => (
                 <div key={idx} className="flex h-fit w-[350px] break-inside-avoid flex-col rounded-lg p-4 shadow-lg max-lg:w-[320px]">
                   <div className="flex place-items-center gap-3">
