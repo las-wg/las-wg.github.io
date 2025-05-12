@@ -167,6 +167,7 @@ export default function Home() {
                 { name: "Agent Network Protocol", img: "anp.png"},
                 { name: "Eclipse LMOS", img: "eclipse-lmos.png"},
                 { name: "AgentOps", img: "agentops.png"},
+                { name: "Firecrawl", img: "firecrawl.png"},
               ].map((t, idx) => (
                 <div key={idx} className="flex h-fit w-[350px] break-inside-avoid flex-col rounded-lg p-4 shadow-lg max-lg:w-[320px]">
                   <div className="flex place-items-center gap-3">
