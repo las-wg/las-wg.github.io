@@ -2,11 +2,12 @@
 module.exports = {
 	prefix: 'tw-',
 	important: false,
-	content: [
-		"**/*.{html, jsx, js}",
-		"**/*.js",
-		"**/*.html",
-	],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/app/**/*.{js,ts,jsx,tsx}",
+  ],
 	theme: {
 		extend: {
 			colors: {
