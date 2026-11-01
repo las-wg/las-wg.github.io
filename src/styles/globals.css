@@ -136,3 +136,92 @@
         @apply bg-background text-foreground;
     }
 }
+
+.leadership-section {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: clamp(20px, 4vw, 48px);
+    background: #fff;
+    border: 1px solid #e2e3f0;
+    border-radius: 20px;
+    color: #374151;
+    line-height: 1.65;
+    scroll-margin-top: 24px;
+}
+
+.leadership-section h1 {
+    color: var(--primary);
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 32px;
+}
+
+.leadership-section h2 {
+    color: #202238;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.leadership-section h3 {
+    color: #202238;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 6px 0;
+}
+
+.leadership-section a {
+    color: #454bae;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: #b8bce4;
+    overflow-wrap: anywhere;
+}
+
+.leadership-section a:hover { text-decoration-color: currentColor; }
+
+a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
+.leadership-intro {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e2e3f0;
+}
+
+.leadership-team {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.leadership-role { color: var(--primary); margin-top: 4px; }
+.leadership-description p + p { margin-top: 12px; }
+
+.leadership-outputs {
+    padding-top: 32px;
+}
+
+.leadership-output { margin-top: 24px; }
+.leadership-output + .leadership-output { padding-top: 24px; border-top: 1px solid #e9eaf3; }
+.leadership-label { color: #626779; font-size: .75rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+.leadership-output code { font-size: .95em; overflow-wrap: anywhere; }
+.leadership-output details { font-size: .875rem; margin-top: 10px; }
+.leadership-output summary { width: fit-content; cursor: pointer; color: #454bae; }
+.leadership-output details p { margin-top: 10px; }
+.leadership-output ul { list-style: disc; padding-left: 20px; }
+.leadership-output li + li { margin-top: 10px; }
+.leadership-small-link { display: inline-block; margin-top: 8px; font-size: .875rem; }
+@media (max-width: 600px) {
+    .leadership-team { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+}
